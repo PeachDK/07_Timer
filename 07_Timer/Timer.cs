@@ -11,5 +11,12 @@ namespace _07_Timer
             string str = time.ToString(@"hh\:mm\:ss");
             return str;
         }
+
+        internal string Padded(int v)
+        {
+            TimeSpan time = TimeSpan.FromSeconds(v);
+            string str = time.ToString(@"ss");
+            return str;
+        }
     }
 }
